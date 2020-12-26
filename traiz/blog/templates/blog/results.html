@@ -1,0 +1,29 @@
+{% extends "blog/base.html"%}
+{% block content %}
+{% load crispy_forms_tags %}
+
+
+<div id="Timeline">
+            <div>
+                <h5>Select a time frame:</h5>
+                <form method="Post">
+                    {% csrf_token %}
+                    {{ date.date }}
+                        {{ date }}
+                        
+
+                        <button  id="start" type="submit">Start</button>
+                </form>
+            </div>  
+            <br>
+            <div id="resutls_viz">
+                    <p>Word Cloud Visualisation & Company Listing</p>
+                </div>
+                
+</div>
+
+
+
+
+
+{% endblock %}
